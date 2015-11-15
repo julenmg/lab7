@@ -64,7 +64,7 @@ function epostaKonprobatu(eposta){
 	XMLHttpRequestObject.onreadystatechange = function(){
 		if ((XMLHttpRequestObject.readyState==4)&&(XMLHttpRequestObject.status==200 )){
 			document.getElementById("epostamezua").innerHTML=XMLHttpRequestObject.responseText;
-			//botoiagaitu();
+			botoiagaitu();
 		}
 	}
 	XMLHttpRequestObject.open("GET","./php/epostaKonprobatuAJAX.php?EPOSTA="+eposta, true);
@@ -77,7 +77,7 @@ function pasahitzaKonprobatu(pasashitza){
 		
 		if ((XMLHttpRequestObject.readyState==4)&&(XMLHttpRequestObject.status==200 )){
 			document.getElementById("passmezua").innerHTML=XMLHttpRequestObject.responseText;
-			//botoiagaitu();
+			botoiagaitu();
 		}
 	}
 	XMLHttpRequestObject.open("GET","./php/pasahitzaKonprobatuAJAX.php?PASAHITZA="+pasashitza, true);
@@ -89,4 +89,10 @@ function botoiagaitu(){
 	var botoia = document.getElementById("submitbtn");
 	var pasaerantzun = document.getElementById("passerantzuna");
 	var epostaerantzun = document.getElementById("epostaerantzuna");
+	
+	if(pasaerantzun.style.Color == "#00FF00" && epostaerantzun.style.Color == "#00FF00"){
+		botoia.style.display = "block";
+	}else{
+		botoia.style.display = "none";
+	}
 }
