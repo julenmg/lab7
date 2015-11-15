@@ -1,0 +1,46 @@
+@charset "utf-8";
+* 						{margin: 0; padding: 0;}
+body						{font: 16px Georgia, serif;}
+
+#page-wrap				{margin: 2% auto; color: white;width:100%}
+#page-wrap >.main 		{border: 1px solid #999; padding: 1%;
+						 margin-bottom: 1px; color: black;}
+
+section > div				{padding: 20px;}
+header, nav,footer			{text-align: center; }
+
+#page-wrap >.main  h3,p{color:white; margin:2% auto;}
+
+#page-wrap >.main h2{color:white; text-align: center;}
+
+#page-wrap >.main a{color:white;}
+
+nav {background: #800000;}
+
+#n1 span{
+	margin: 5% auto;
+}
+
+#n1 span > a{
+	color: grey;
+}
+header{
+	background: #805215;
+}
+
+footer{
+background: #805215;
+}
+
+section{
+	background-color: #d4a76a;
+}
+
+article input,textarea{
+	margin: 6px;
+	resize:none;
+}
+
+#besterikTextarea{display:none;}
+
+#ErrorMsgs          		 { color: #f61; font-size: 16px;}
